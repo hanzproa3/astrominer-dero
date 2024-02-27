@@ -16,3 +16,5 @@ nano /etc/systemd/system/qubic.service
 
 "allowHwInfoCollect": true,
 "overwrites": {"CUDA": "12"},
+cpu
+eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjIxMThiMjhlLTQxNTktNDM5Yy05MWMzLTFiZWI1YTQxYjQyZiIsIk1pbmluZyI6IiIsIm5iZiI6MTcwOTA1ODU4OCwiZXhwIjoxNzQwNTk0NTg4LCJpYXQiOjE3MDkwNTg1ODgsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.SY_ma9OjKXFfEdnieG2q7tG0Qekc4ymZJfcdO8Cf62RP6wSaAV14Opt0-3m1hNTlGapIZc5z7WyfpigtcXZ6jg
