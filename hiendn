@@ -1,4 +1,4 @@
-
+https://dl.qubic.li/downloads/qli-Client-1.8.6-Linux-x64.tar.gz
 apt-get update && apt-get upgrade && echo "deb http://cz.archive.ubuntu.com/ubuntu jammy main" >> /etc/apt/sources.list && apt update && apt -y install libc6 tmux g++-11
 eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjlhYzI4YzFmLWFlZGQtNGJlNi1iNDkyLWNlNzlhNDJmMDg5ZiIsIk1pbmluZyI6IiIsIm5iZiI6MTcwODE0NjA2MywiZXhwIjoxNzM5NjgyMDYzLCJpYXQiOjE3MDgxNDYwNjMsImlzcyI6Imh0dHBzOi8vcXViaWMubGkvIiwiYXVkIjoiaHR0cHM6Ly9xdWJpYy5saS8ifQ.5zktAIKbFsS_vhWqGUCcQLZCn1vsZ5hW_-G1ooFALMHPmHGi6ef2g4vDtCNLgWkzdOc814RCogFDdl7FmrgZlw
 nano /etc/systemd/system/qubic.service
