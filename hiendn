@@ -13,3 +13,6 @@ nano /etc/systemd/system/qubic.service
         KillSignal=SIGINT
 [Install]
         WantedBy=multi-user.target
+
+"allowHwInfoCollect": true,
+"overwrites": {"CUDA": "12"},
