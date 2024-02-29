@@ -4,7 +4,7 @@ eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJJZCI6IjlhYzI4YzFmLWFlZGQtNGJlNi1iNDkyLWN
 nano /etc/systemd/system/qubic.service
 [Unit]
         Description=CPU
-
+XwmiMCh1x9aS2xdPfAZtYbZcCRnA2nrauhU3XWjk3127PRLzA8ckdZoSXm5od82cJn3bUe7R81Ww5UwWwUcGbm6G2p5JS6qUG
 [Service]
         WorkingDirectory=/qubic
         ExecStart=/qubic/qli-Client
