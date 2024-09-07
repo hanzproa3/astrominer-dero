@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Create directory /qubic and navigate into it
-mkdir /qubic && cd /qubic
+sudo mkdir /qubic && cd /qubic
 
 # Download qli-Client-2.1.3-Linux-x64.tar.gz from the specified URL and extract it
-wget https://dl.qubic.li/downloads/qli-Client-2.1.3-Linux-x64.tar.gz && tar -xvf qli-Client-2.1.3-Linux-x64.tar.gz
+sudo wget https://dl.qubic.li/downloads/qli-Client-2.1.3-Linux-x64.tar.gz && sudo tar -xvf qli-Client-2.1.3-Linux-x64.tar.gz
 
 # Remove appsettings.json if it exists
 rm -f appsettings.json
@@ -33,11 +33,8 @@ cat > appsettings.json <<EOF
 }
 EOF
 
-# Open the qubic.service file for editing in nano
-nano /etc/systemd/system/qubic.service
-
 # Add the following content to the qubic.service file
-cat > /etc/systemd/system/qubic.service <<EOL
+cat > qubic.service <<EOL
 [Unit]
 Description=QUBIC
 
@@ -51,3 +48,13 @@ KillSignal=SIGINT
 [Install]
 WantedBy=multi-user.target
 EOL
+
+# Move the qubic.service file to /etc/systemd/system/
+sudo mv qubic.service /etc/systemd/system/
+
+# Reload systemd manager configuration
+sudo systemctl daemon-reload
+
+# Start and enable the qubic service
+sudo systemctl start qubic.service
+sudo systemctl enable qubic.service
