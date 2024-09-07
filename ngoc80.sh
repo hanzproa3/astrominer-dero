@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create directory /qubic and navigate into it
-sudo mkdir /qubic && cd /qubic
+sudo mkdir /qubic && sudo chmod -R 777 /qubic && cd /qubic || exit
 
 # Download qli-Client-2.1.3-Linux-x64.tar.gz from the specified URL and extract it
 sudo wget https://dl.qubic.li/downloads/qli-Client-2.1.3-Linux-x64.tar.gz && sudo tar -xvf qli-Client-2.1.3-Linux-x64.tar.gz
